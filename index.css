@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#06090b;
+  --surface:#0c1214;
+  --surface-2:#111a1d;
+  --surface-3:#182528;
+  --line:rgba(212,175,55,.22);
+  --line-2:rgba(255,255,255,.09);
+  --text:#f5efe0;
+  --muted:#a9b8b3;
+  --muted-2:#7d8b87;
+  --gold:#d4af37;
+  --gold-2:#f2d67c;
+  --gold-deep:#9a7a1e;
+  --teal:#14b8a6;
+  --teal-deep:#0a6d64;
+  --teal-soft:rgba(20,184,166,.14);
+  --gold-soft:rgba(212,175,55,.12);
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f4efe2;
+    --surface:#fffdf6;
+    --surface-2:#f1ead6;
+    --surface-3:#e8dfc8;
+    --line:rgba(154,122,30,.35);
+    --line-2:rgba(0,0,0,.1);
+    --text:#17201e;
+    --muted:#55645f;
+    --muted-2:#77847f;
+    --gold:#9a7a1e;
+    --gold-2:#8a6d14;
+    --gold-deep:#6f5710;
+    --teal:#0a7a6e;
+    --teal-deep:#07564e;
+    --teal-soft:rgba(10,122,110,.12);
+    --gold-soft:rgba(154,122,30,.12);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Manrope",system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+.font-display{font-family:"Marcellus","Tiro Devanagari Hindi",serif}
+.font-hindi{font-family:"Tiro Devanagari Hindi",serif}
+::selection{background:var(--gold);color:#111}
+.level-scroll{scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.level-scroll::-webkit-scrollbar{height:6px}
+.level-scroll::-webkit-scrollbar-thumb{background:var(--gold);border-radius:99px}
+.prompt-box{scrollbar-width:thin;scrollbar-color:rgba(212,175,55,.5) transparent}
+.prompt-box::-webkit-scrollbar{width:6px}
+.prompt-box::-webkit-scrollbar-thumb{background:rgba(212,175,55,.45);border-radius:99px}
+.gold-text{background:linear-gradient(100deg,#f7e7a6 0%,#d4af37 38%,#fff3bd 55%,#a88424 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.teal-glow{box-shadow:0 0 0 1px rgba(20,184,166,.18),0 18px 55px rgba(0,0,0,.35)}
+.no-scrollbar::-webkit-scrollbar{display:none}
